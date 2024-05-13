@@ -4,6 +4,7 @@ import { Home } from './_root/pages'
 import AuthLayout from './_auth/AuthLayout'
 import RootLayout from './_root/RootLayout'
 import SignupForm from './_auth/forms/SignupForm'
+import { Toaster } from "@/components/ui/toaster"
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />}/>
         </Route>
       </Routes>
+      <Toaster />
   </main>
   )
 }
